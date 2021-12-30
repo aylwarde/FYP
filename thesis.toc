@@ -4,41 +4,43 @@
 \contentsline {chaphd}{CHAPTER}{1}%
 \nopagebreak 
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}%
-\contentsline {section}{\numberline {1.1}History}{1}%
-\contentsline {section}{\numberline {1.2}Purpose}{1}%
-\contentsline {section}{\numberline {1.3}Format of the Thesis}{2}%
-\contentsline {section}{\numberline {1.4}Processing \LaTeX {} Files}{3}%
-\contentsline {section}{\numberline {1.5}HELP! --- My Bibliography (or other Sub-part) in Not Working!}{5}%
-\contentsline {section}{\numberline {1.6}Building the Document using a Graphical User Interface}{6}%
-\contentsline {section}{\numberline {1.7}\LaTeX {} Thesis Review, or ``How to Bypass the Montezuma Publishing Review Process''}{6}%
-\contentsline {chapter}{\numberline {2}MISCELLANEOUS COMMANDS: AN INTRODUCTION TO EQUATIONS, THEOREMS, FIGURES AND TABLES}{7}%
-\contentsline {section}{\numberline {2.1}Basic Math}{7}%
-\contentsline {section}{\numberline {2.2}Equations}{8}%
-\contentsline {section}{\numberline {2.3}Theorems, etc.}{8}%
-\contentsline {section}{\numberline {2.4}Numbering of Theorems, etc...}{9}%
-\contentsline {section}{\numberline {2.5}Figures or How to Get into Real Trouble if You Take Advantage of What \LaTeX {} Can Do}{9}%
-\contentsline {section}{\numberline {2.6}Tables}{10}%
-\contentsline {section}{\numberline {2.7}Potential Pitfalls}{15}%
-\contentsline {subsection}{\numberline {2.7.1}Tables and Figures}{15}%
-\contentsline {subsubsection}{\numberline {2.7.1.1}Centered Tables Figures}{18}%
-\contentsline {subsection}{\numberline {2.7.2}Margins}{18}%
-\contentsline {subsection}{\numberline {2.7.3}Bad Pagebreaks}{18}%
-\contentsline {subsection}{\numberline {2.7.4}Bad Linebreaks}{19}%
-\contentsline {subsection}{\numberline {2.7.5}Vertical Space}{19}%
-\contentsline {subsection}{\numberline {2.7.6}Non-Bold Math in the TOC: $x=2\pi /e$}{19}%
-\contentsline {chapter}{\numberline {3}SECTIONING --- THE MIDDLE}{20}%
-\contentsline {section}{\numberline {3.1}A Section}{20}%
-\contentsline {subsection}{\numberline {3.1.1}A Subsection With a Very Long Title To See How That Will Look When Printed}{20}%
-\contentsline {subsubsection}{\numberline {3.1.1.1}A Subsubsection}{20}%
-\contentsline {subsubsubsection}{\numberline {3.1.1.1.1}A Subsubsubsection}{20}%
-\contentsline {paragraph}{\numberline {3.1.1.1.1.1}A Paragraph.}{20}%
-\contentsline {subsection}{\numberline {3.1.2}A Friend of \S 3.1.1\hbox {}}{20}%
-\contentsline {section}{\numberline {3.2}A 2nd Section}{20}%
-\contentsline {chapter}{\numberline {4}REFERENCING}{22}%
-\contentsline {schapter}{BIBLIOGRAPHY}{24}%
+\contentsline {section}{\numberline {1.1}Homology}{1}%
+\contentsline {section}{\numberline {1.2}Cohomology}{1}%
+\contentsline {subsection}{\numberline {1.2.1}Introduction}{1}%
+\contentsline {subsection}{\numberline {1.2.2}Cup product and cohomology ring}{1}%
+\contentsline {subsection}{\numberline {1.2.3}Hurewicz theorem}{1}%
+\contentsline {subsection}{\numberline {1.2.4}Bockstein Homomorphism}{1}%
+\contentsline {section}{\numberline {1.3}Homotopy}{1}%
+\contentsline {section}{\numberline {1.4}Interplay between homotopy and cohomology: Eilenberg MacLane spaces and the Brown representability theorem}{1}%
+\contentsline {section}{\numberline {1.5}Category Theory and the Yoneda Lemma}{1}%
+\contentsline {chapter}{\numberline {2}MISCELLANEOUS COMMANDS: AN INTRODUCTION TO EQUATIONS, THEOREMS, FIGURES AND TABLES}{5}%
+\contentsline {section}{\numberline {2.1}Basic Math}{5}%
+\contentsline {section}{\numberline {2.2}Equations}{6}%
+\contentsline {section}{\numberline {2.3}Theorems, etc.}{6}%
+\contentsline {section}{\numberline {2.4}Numbering of Theorems, etc...}{7}%
+\contentsline {section}{\numberline {2.5}Figures or How to Get into Real Trouble if You Take Advantage of What \LaTeX {} Can Do}{7}%
+\contentsline {section}{\numberline {2.6}Tables}{8}%
+\contentsline {section}{\numberline {2.7}Potential Pitfalls}{13}%
+\contentsline {subsection}{\numberline {2.7.1}Tables and Figures}{13}%
+\contentsline {subsubsection}{\numberline {2.7.1.1}Centered Tables Figures}{16}%
+\contentsline {subsection}{\numberline {2.7.2}Margins}{16}%
+\contentsline {subsection}{\numberline {2.7.3}Bad Pagebreaks}{16}%
+\contentsline {subsection}{\numberline {2.7.4}Bad Linebreaks}{17}%
+\contentsline {subsection}{\numberline {2.7.5}Vertical Space}{17}%
+\contentsline {subsection}{\numberline {2.7.6}Non-Bold Math in the TOC: $x=2\pi /e$}{17}%
+\contentsline {chapter}{\numberline {3}SECTIONING --- THE MIDDLE}{18}%
+\contentsline {section}{\numberline {3.1}A Section}{18}%
+\contentsline {subsection}{\numberline {3.1.1}A Subsection With a Very Long Title To See How That Will Look When Printed}{18}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}A Subsubsection}{18}%
+\contentsline {subsubsubsection}{\numberline {3.1.1.1.1}A Subsubsubsection}{18}%
+\contentsline {paragraph}{\numberline {3.1.1.1.1.1}A Paragraph.}{18}%
+\contentsline {subsection}{\numberline {3.1.2}A Friend of \S 3.1.1\hbox {}}{18}%
+\contentsline {section}{\numberline {3.2}A 2nd Section}{18}%
+\contentsline {chapter}{\numberline {4}REFERENCING}{20}%
+\contentsline {schapter}{BIBLIOGRAPHY}{22}%
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{26}%
+\contentsline {chaphd}{APPENDICES}{24}%
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}CW Complexes and CW approximation}{26}%
-\contentsline {chapter}{\numberline {B}Graded modules and algebras, Hopf algebras, more algebraic stuff}{29}%
+\contentsline {chapter}{\numberline {A}CW Complexes and CW approximation}{24}%
+\contentsline {chapter}{\numberline {B}Graded modules and algebras, Hopf algebras, more algebraic stuff}{27}%
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 

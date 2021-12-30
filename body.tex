@@ -9,332 +9,154 @@
 %(FORMAT) and/or thesis style file is incorrect/incomplete, PLEASE
 %(FORMAT) contact the maintainer.  THANK YOU!!!
 
+
+
 \chapter{INTRODUCTION}
 \label{chap:intro}
 % By labeling the chapter, I can refer to it later using the
 % label. (\ref{chap:intro}, \pageref{chap:intro}) Latex will take care
 % of the numbering.
 
-You can save yourself 12 minutes now by not reading this document;
-later on the average payback is 105-fold when you run into problems.
+The first three sections offer an overview of homology, cohomology, and homotopy theories, and may be skipped by a reader familiar with these topics. Section introduces whatever that is a bit more...Then we go into category theory... 
 
-\section{History}
-
-In the early 1990s Richard Frost put together a \LaTeX style file for
-SDSU theses based on \LaTeX~2.09.  Joe Mahaffy wrote an example thesis
-to guide students in the use of \LaTeX{} code.  Since that time \LaTeX
-has been upgraded to \LaTeX2$\epsilon$ and the formatting requirements
-for SDSU have also changed.  In 2004, Jiri Lebl and Mike O'Sullivan
-worked on a revision, upgrading to \LaTeX2$\epsilon$.  This
-\LaTeX2$\epsilon$ class file basically has almost nothing in common
-with the old \LaTeX{} style; it is a modification of the standard
-report class.
-
-The class file \verb+sdsu-thesis.cls+ and this example are/have been
-maintained by
-\begin{itemize}
-\item Aug 2010 --- \emph{current}: Peter Blomgren,
-  \verb+<blomgren@sdsu.edu>+.
-\end{itemize}
-
-In September 2010, the ``short'' example was merged into the ``long''
-example to form this document; this seemed like a reasonable thing to
-do.
-
-While every effort is/has been made to make sure that the template and
-thesis style conforms to the \emph{SDSU Thesis Manual}, \textbf{no
-guarantees can be made.}  Depending on the thesis reviewer and his/her
-interpreation of what is Really Important$^{\hbox{\scriptsize TM}}$ in
-the thesis manual, and his/her level of caffeination some theses fly
-through, and some get stuck even though they use the same template and
-style file.
-
-PLEASE let the maintainer know of any and all feedback you get from
-the thesis reviewer so that the template and/or style file can be
-updated as necessary.  THANK YOU!!!
-
-{\tiny You may be able to completely bypass the Montezuma Publishing
-  review process...  Search for hidden clues in this document!}
+\section{Homology}
 
 
-\section{Purpose}
-
-This document illustrates some of the typesetting tasks that are
-commonly encountered in a thesis containing
+\section{Cohomology}
+\subsection{Introduction}
+\subsection{Cup product and cohomology ring}
+\subsection{Hurewicz theorem}
+\subsection{Bockstein Homomorphism}
 mathematics\footnote{\texttt{http://en.wikibooks.org/wiki/LaTeX}\quad
   provides a wealth of information regarding \LaTeX, check it out.}.
-All theses must follow the guidelines of the SDSU Thesis Manual for
-formating.  Most formating issues will be automatically handled by the
-\LaTeX{} class file included with the source file for this document,
-but there may be some special circumstances that will require some
-tinkering with spacing, pagebreaks, etc.
 
-\LaTeX{} is a remarkably powerful package, but it does take some effort
-to learn.  The best plan is to start with something already written
-and learn from the example.  The current document was produced for
-this purpose.  This document illustrates how the student should format
-the chapters and sections of the thesis, prepare the bibliography, and
-include other appropriate items commonly found in a technical
-document.  The title page, signature page, acknowledgments page,
-abstract, and everything else are all formatted according to
-specifications of the SDSU Thesis Manual of 2004, once you enter the
-text to include.
-
-For a general reference it is recommended that the student obtain the
-user's guide and reference manual of Leslie Lamport \cite{LAM}. The
-student should obtain copies of the files used to generate this
-document, then examine the text files used to generate the document
-and the \LaTeX{} output.  The files for this example thesis are the
-following.
-\begin{itemize}
-\item \verb+Makefile+: Contains ``recipes'' for building the thesis;
-  type typing \verb+make+, and \verb+make thesis.pdf+.
-\item \verb+abstract.tex+: Contains the abstract.
-\item \verb+append.tex+: Contains all the text for appendices.
-\item \verb+body.tex+: Contains all the text for chapters. 
-\item \verb+sdsu-thesis.cls+: Defines the layout and formatting.
-\item \verb+thbib.bib+:  Contains a bibliographical database.
-\item \verb+thesis.tex+: 
-  \begin{enumerate}
-  \item  Contains information for the title page, and other
-    front-matter.
-  \item Includes the files \verb+abstract.tex+,  \verb+body.tex+, and
-    \verb+append.tex+. 
-  \item Defines the bibliographical style (\verb+siam+ in this
-    example) and creates the bibliography using the file
-    \verb+thbib.tex+.
-  \end{enumerate}
-\item \verb+cos.eps+, \verb+mapping.eps+, \verb+plot2.eps+, and
-  \verb+somb.eps+: Encapsulated postscript files that are included by
-  \verb+body.tex+ (in the subdirectory \verb+Figures/+.)
-\end{itemize}
-
-Positioning and captioning of figures and tables should agree with the
-thesis manual.  Occasionally, \LaTeX{} does not break when you want it
-too, so you have to add a \verb+\newpage+ command to get
-the correct break, such as when a section header starts at the bottom
-of a page or when paragraphs have widows or orphans.
-
-
-\section{Format of the Thesis}
-The Department of Mathematics and Statistics wants the student to use
-a standard technical format. This implies that equations, theorems,
-definitions, tables, etc. should be numbered $N.M$, where $N$ is the
-chapter number and $M$ is successively increased through the chapter.
-\LaTeX{} does this automatically. Numbering of the equations is on the
-right side of the page (default in \LaTeX).  The student may use
-\textit{italics}, \textsc{small caps}, or \textbf{bold fonts} to
-highlight important phrases.  The code for creating theorems,
-definitions etc., is illustrated in this example thesis.  Positioning
-and captioning of figures and tables should agree with the thesis
-manual.  Occasionally, \LaTeX{} does not break when you want it too, so
-you have to add a \verb+\newpage+ command to get the correct break,
-such as when a section header starts at the bottom of a page or when
-paragraphs have widows or orphans.
+\section{Homotopy}
 
 Bibliographical citations are relatively easy.  Here is one \cite{ART}
 and another citation \cite{Lehto:1976} and we cannot forget Milnor
-\cite{Milnor:topdiff}.  Look at \verb+thbib.bib+ to see how to create
-the database for the bibliography.
+\cite{Milnor:topdiff}.
 
 You type new paragraphs by just leaving an empty line between them.
 
 
-
-\section{Processing \LaTeX{} Files}
-
-The best way to learn \LaTeX{} is to take advantage of someone else's
-work from which you can model your document. This pseudo-thesis should
-give you a good working example to create your own document. The key
-commands to create any document are the following: \vspace{.15in}
-
-\noindent\texttt{%
-  \ssp % \ssp inside the { } makes the change temporary
-  \hspace*{5em}$\backslash$documentclass[\emph{options}]\{\emph{class}\}\\
-  \hspace*{5em}$\backslash$begin\{document\}\\
-  \hspace*{7em}Insert any text you want in here.\\
-  \hspace*{5em}$\backslash$end\{document\}\\
-}
-
-\noindent
-where \emph{class} is some class type.  For SDSU Thesis you would
-normally use the \texttt{sdsu-thesis} class.  When you're writing your
-thesis and want a draft printout you can also add options such as
-\texttt{savepaper} which will single space your document, and use
-larger margins.  Most postscript viewers will allow you to print only
-a subset of pages as well.  The standard for the final thesis is $1
-\,1/2$ space.  If you want double spaced then uncomment the
-\texttt{doublespace} option.
-
-\verb+README+ files for the different operating systems accompany this
-distribution.  Here we explain how to use the command line to process
-\LaTeX{} on a Unix/Linux system (or with modifications Mac OS X).
-
-To process a \LaTeX{} document that you have named
-\texttt{filename.tex}, you simply type \texttt{latex filename}. For
-example, this document is generated by its driver file with
-\texttt{latex thesis}. If it is the first time and you have a
-bibliography, then you need the following sequence of commands:
-\vspace{.15in}
-
-\noindent\texttt{%
-  \ssp % \ssp inside the { } makes the change temporary
-  \hspace*{5em}latex filename\\  
-  \hspace*{5em}bibtex filename\\
-  \hspace*{5em}latex filename\\
-  \hspace*{5em}latex filename\\
-}
-\vspace{.15in}
-
-\noindent
-Unless you have added new references, the \texttt{bibtex filename} can
-be omitted. You will need to execute the \texttt{latex filename}
-command twice if there are any renumbering of items, like
-equations. When there are errors you can usually hit the carriage
-return and work through them\footnote{Do not panic if you get lots of
-  errors; fix the \emph{first} one!  The following errors are often
-  due to things being out-of-context due to the first error. ALWAYS
-  fix the first error before worrying about the others!!!
-  \emph{ALWAYS fix the first error before worrying about the
-    others!!!}  \textbf{ALWAYS fix the first error before worrying
-    about the others!!!} \textsc{ALWAYS fix the first error before
-    worrying about the others!!!}}.  Other alternatives include typing
-either \texttt{x} or \texttt{q} to allow it to proceed. The errors
-will be kept in a file called \texttt{filename.log}.  Be sure to pay
-attention to comments the \LaTeX{} produces as it gives you some
-warnings, such as when you need to make another run due to changes in
-the numbering of references or equations.
-
-After you have performed the above procedure, you will have a file
-named \texttt{filename.dvi} (or \texttt{thesis.dvi} in our case) which
-is a device independent file. There are several means of viewing your
-output. If you are working in an Xwindow environment, then the
-simplest procedure is to type \texttt{xdvi filename.dvi}, which will
-open a window for viewing the \LaTeX{} document. It will not include
-any postscript figures, but it is automatically updated each time you
-latex your document. I highly recommend starting with this
-environment. (If you are on rohan and accessing saturn, then you will
-need the environment setup described below for ghostview.)
-
-The second procedure for either viewing with ghostview or printing
-involves the conversion of the .dvi file to a postscript file. (You
-may want to examine \texttt{man dvips} for assistance.) The simplest
-way to convert the .dvi file to a postscript file is to type the
-following: \vspace{.15in}
-
-\texttt{
-  dvips -o filename.ps filename.dvi
-}
-\vspace{.15in}
-
-\noindent
-This creates the postscript file, \texttt{filename.ps}. If you do not
-need the entire document, then you can type: \vspace{.15in}
-
-\texttt{
-  dvips -p\emph{x} -l\emph{y} -o filename.ps filename.dvi
-}
-\vspace{.15in}
-
-\noindent
-where \texttt{x} is the number of the first page and \texttt{y} is the
-number of the last page.
-
-Then to get a hard copy you should use the standard printing commands
-of your system.  If you are on your own Linux system at home, usually
-\texttt{lpr filename.ps} will print the file.
-
-In case your computer system has a different paper size set up as
-default then ``letter'' you can force a letter paper size by adding
-\texttt{-t letter} as an option to \texttt{dvips}.  This can happen if
-you are running in a different language then American English.
-
-The makefile simplifies many of the sequences of commands that you
-might use.  For example, just type \texttt{make} to create a
-postscript file or \texttt{make view} to create a postscript and view
-it using a postscript viewer. Also, make clean will remove all the
-.log .aux .ps .dvi files.
+\section{Interplay between homotopy and cohomology: Eilenberg MacLane spaces and the Brown representability theorem}
 
 
-\section{HELP! --- My Bibliography (or other Sub-part) in Not Working!}
-
-Bibliographies, Glossaries, and other ``special'' parts of a \LaTeX{}
-document must be built separately (but not independent) from the main
-\texttt{\textbf{latex thesis}} build.  The build work flow ::\\
-
-\begin{tabular}{lp{0.5\linewidth}}
-  \hline
-  \textsc{Build Command}
-  &
-    \textsc{Comment}
-  \\
-  \hline
-  \texttt{\textbf{latex thesis}}
-  &
-    The first pass builds the structure, and produces ``hooks'' where
-    things (like bibliographies, references, glossaries, etc.) need to
-    go.
-  \\
-  \texttt{\textbf{bibtex thesis}}
-  &
-    Build the bibliography (everyone needs this)
-  \\
-  \texttt{\textbf{makeglossaries thesis}}
-  &
-    Build the glossary (if needed)
-  \\
-  \texttt{\textbf{latex thesis}}
-  &
-    The second pass inserts bibliographies, references, glossaries,
-    etc.\ into the document, but some cross-referencing is still
-    undefined.
-  \\
-  \texttt{\textbf{latex thesis}}
-  &
-    The third pass resolves the final cross-referencing and the
-    document is complete.
-  \\
-  \hline
-\end{tabular}
-
-\vspace{\baselineskip}
-
-How you set this up depends on your build environment; \emph{e.g.} in
-February~2019 it was reported that in \TeX{}maker some of these build
-options are available under the \emph{Quick Build command} from the
-\emph{Options/Configure} menu. (See also section~\ref{sec:GUI})
-
-
-\section{Building the Document using a Graphical User Interface}
+\section{Category Theory and the Yoneda Lemma}
 \label{sec:GUI}
+Cohomology operations are operations between cohomology groups that commute with homomorphisms induced by continuous maps. Thus, they provide us with another means of distinguishing spaces.
 
-\textbf{TEX}MAKER (\texttt{https://www.xm1math.net/texmaker/}) is a
-popular cross-platform (Windows, MacOsX, Linux) \LaTeX{} editor /
-build-environment.  Note that it is only a front-end, and you also
-need the actual \LaTeX{}
-(\texttt{https://www.latex-project.org/get/\#tex-distributions})
-back-end to make it run.  Some \TeX{} distributions (\emph{e.g.}\/
-MacTeX) include other editors / build-environments.
+\begin{definition}
+	[\textit{Cohomology Operation}]
+	A \textit{cohomology operation} is a map $\Theta = \Theta_X : H^m(X; G) \to H^n(X; H)$ between cohomology groups, for any space $X$, and fixed $m$, $n$, $G$, $H$, satisfying  the naturality property that for any map $f: X \to Y$ between spaces, the following diagram commutes:
+	\[\begin{tikzcd}
+	{H^m(Y; G)} && {H^n(Y;H)} \\
+	\\
+	{H^m(X; G)} && {H^n(X; H)}
+	\arrow["{\theta_Y}", from=1-1, to=1-3]
+	\arrow["{f^*}", from=1-1, to=3-1]
+	\arrow["{\Theta_X}"', from=3-1, to=3-3]
+	\arrow["{f^*}", from=1-3, to=3-3]
+	\end{tikzcd}\]
+	
+\end{definition}
 
-You have to configure TEXMAKER's ``quickbuild'' setup so that all the
-pieces of the document get processed.  \textbf{Options} $\rightarrow$
-\textbf{Configure Texmaker} $\rightarrow$ \textbf{Quick Build}
-\textbf{PdfLaTeX + Bib(la)tex + PdfLaTeX + View Pdf} should get you up
-and running; this does not cover the building of glossaries.  If you
-need one, there are several options for including the glossary build;
-please consult ``Uncle \textbf{Google}'' for further help.
+\begin{theorem}\label{cohomology-op}
+	\cite[Proposition 4L.1]{Hatcher:478079}
+	Fix $m$, $n \in \Z$, $G$, $H$ groups. For a space $Z$, there is a bijection between the set of cohomology operations $\Theta : H^m(Z; G) \to H^n(Z; H)$ and $H^n(K(G, m); H)$ given by $\Theta \mapsto \Theta(\iota)$, where $\iota$ is a fundamental class in $H^m(K(G, m); G)$.
+\end{theorem}
 
+We will state and prove a more general result in category theory, the \textit{Yoneda Lemma}, and apply this result to prove Theorem \ref{cohomology-op}. We first introduce the more general concept of a natural transformation between contravariant functors.
 
-\section{\LaTeX{} Thesis Review, or ``How to Bypass the Montezuma
-  Publishing Review Process''}
-\label{sec:LaTeXReview}
+\begin{definition}
+	[\textit{Natural Transformation}] If $F$ and $G$ are contravariant functors between categories $C$ and $D$, a \textit{natural transformation} $\eta : F \to G$ is a transformation such that for all maps $g : X \to Y$ in $C$, the following diagram commutes: 
+	
+	\[\begin{tikzcd}
+	X && FY  && GY \\
+	\\
+	Y && FX && GX
+	\arrow["{\eta_Y}", from=1-3, to=1-5]
+	\arrow["Gg", to=3-5, from=1-5]
+	\arrow["{\eta_X}", from=3-3, to=3-5]
+	\arrow["Fg", to=3-3, from=1-3]
+	\arrow["g"', from=1-1, to=3-1]
+	\end{tikzcd}\]
+	
+\end{definition}
 
-Some departments have their own authorized reviewer(s) for \LaTeX{}
-formatted thesis.  Have your reviewer sign the
-\texttt{LaTeX\_Thesis\_Format\_Approval\_[OFFICIAL].docx}
-form (in the \texttt{Resources} folder, and give that form to
-Montezuma Publishing along with your thesis.
+\begin{proposition}\label{nat}
+	Let C be the category of CW complexes and morphisms homotopy classes of continuous maps. Then cohomology operations are natural transformations from $C$ to $C$.
+\end{proposition}
 
+\begin{proof}
+	Immediate from definitions.
+\end{proof}
+
+We give a contravariant argument of the Yoneda lemma, so as to apply it to cohomology operations directly. The covariant argument is analogous.
+
+\begin{theorem}
+	[\textit{Yoneda Lemma}]
+	Let $C$ be a category, and $X$ an object of $C$. Let $h^X : C^{\op} \to \Set$ be the contravariant functor $h^X = \Hom(-, X)$. Then for any contravariant set-valued functor $F : C^{\op} \to \Set$, we have a bijection between the natural transformations from $h^X$ to $F$ and $FX \in \Set$, that is,
+	\[ FX \simeq \Nat(h^X, F) \]
+\end{theorem}
+
+\begin{proof}
+	Consider a natural transformation $\eta : h^X \to F$. Then for any object $Y$ in $C$ and a map $g : Y \to X$, the following square commutes, where $(h^X g )(\beta) = \beta \circ g$ for $\beta \in h^X X$, and $\eta_X$, $\eta_Y$ are the components of $\eta$ at $X, Y$ respectively.
+	\[\begin{tikzcd}
+	Y && h^X X && FX \\
+	\\
+	X && h^X Y && FY
+	\arrow["{\eta_X}", from=1-3, to=1-5]
+	\arrow["{Fg}", to=3-5, from=1-5]
+	\arrow["{\eta_Y}", from=3-3, to=3-5]
+	\arrow["h^X g", to=3-3, from=1-3]
+	\arrow["g"', from=1-1, to=3-1]
+	\end{tikzcd}\]
+	Let $1_X \in h^X X$ be the identity map. Then $\eta_X (1_X) \in FX$ and 
+	\[ \eta_Y(h^X g)(1_X) = \eta_Y(g) = Fg(\eta_X(1_X)).\] 
+	Thus for every object $Y$, $\eta_Y$ is determined by $\eta_X(1_X)$. We define $\tau : \Nat(h^X, F) \to FX$ by $\tau(\eta) = \eta_X(1_X)$.
+	
+	Conversely, any $g : Y \to X$, gives rise to $Fg: FX \to FY$. Let $x \in FX$. We wish to define a natural transformation $\lambda(x) : h^X \to F$. We define components map $(\lambda(x))_Y : h^X Y \to FY$ given by
+	\[ (\lambda(x))_Y (g) = Fg(x).\]
+	Then $\lambda(x)$ is a natural transformation, that is given any $f : Z \to Y$, we claim we have the following commuting:
+	\[\begin{tikzcd}
+	Z && h^X Y && FY \\
+	\\
+	Y && h^X Z && FZ
+	\arrow["{(\lambda(x))_Y}", from=1-3, to=1-5]
+	\arrow["{Ff}", to=3-5, from=1-5]
+	\arrow["{(\lambda(x))_Z}", from=3-3, to=3-5]
+	\arrow["h^X f", to=3-3, from=1-3]
+	\arrow["f"', from=1-1, to=3-1]
+	\end{tikzcd}\]
+	Indeed, $g : Y \to X$, $g \in h^X Y$ has $Ff(Fg(x)) = F(g \circ f)(x) = F (h^X f)(g)(x)$. Therefore we can define $\lambda : FX \to \Nat(h^X, F)$, $x \mapsto \lambda(x)$.
+	
+	Finally, we need to show that $\tau$ and $\lambda$ are inverses. For $x \in FX$, we have $\tau(\lambda(x)) = (\lambda(x))_X(1_X) = F(1_X)(x) = 1_{FX}(x)$, so that $\tau\circ\lambda = 1_{FX}$. For $\eta \in \Nat(h^X, F)$, we have $\lambda(\tau(\eta)) = \lambda(\eta_X(1_X))$. Then for any object $Y$ and any $g: Y \to X$, $\lambda(\eta_X(1_X))_Y(g) = Fg(\eta_X(1_X)) = \eta_Y(g)$ by above. Thus $\lambda(\eta_X(1_X)) = \eta$, so that $\lambda\circ\tau = 1_{\Nat(h^X, F)}$.
+	
+\end{proof}
+
+\begin{corollary}\label{hom}
+	Let $C$ be a category, $X$, $Y$ objects in $C$. Then,
+	\[ \Hom(X, Y) \simeq \Nat \left( \Hom(-, X), \Hom(-, Y) \right) \]
+\end{corollary}
+
+\begin{proof}
+	Let $F = h^Y$, and apply Yoneda lemma.
+\end{proof}
+
+We are now in a position to prove Theorem \ref{cohomology-op}.
+
+\begin{proof}
+	[\textit{Proof of Theorem \ref{cohomology-op}}]
+	By CW-approximation, it suffices to prove the statememt for the case of $Z$ a CW-complex. Then we can identify $H^m(Z;G)$ with $[Z, K(G, m)]$ and likewise $H^n(Z; H)$ with $[Z, K(H; n)]$. 
+	
+	By Corollary \ref{hom}, 
+	\[\Hom(K(G, m), K(H, n)) \simeq \Nat\left(\Hom(Z, K(G, m)), \Hom(Z, K(H, n)\right)
+	\simeq \Nat(H^m(Z; G), H^n(Z; H)),\]
+	but the natural transformations between the cohomology groups are cohomology operations by Proposition \ref{nat}, and $\Hom(K(G, m), K(H, n))$ is $H^n(K(G, m) ; H)$.
+	
+	Let $K = K(G, m))$. The  map $\tau$ from the proof of the Yoneda lemma sends a cohomology operation $\Theta$ to $\Theta_K(1_K)$, where $1_K$ is the identity map on $K$. Then $\Theta_K(1_K) = \Theta(\iota)$ for $\iota \in H^m(K, G) = H^m(K(G, m); G)$ with $\iota$ a fundamental class since $1_K = 1^*\iota = \iota$.
+\end{proof}
 
 
 \chapter{MISCELLANEOUS COMMANDS: AN INTRODUCTION TO EQUATIONS,
