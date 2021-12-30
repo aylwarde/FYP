@@ -1,0 +1,28 @@
+\documentclass[a4page]{article}
+\usepackage{amsmath,amssymb,amsthm} % maths packages
+\usepackage{a4wide} % wide page
+\usepackage{tikz-cd} % commutative diagrams
+\usepackage[colorlinks]{hyperref} % hyperreferences
+
+\input{commands.tex} % file with useful abbreviations
+
+% Define some abbreviations that we can use later
+\def\Ker{\operatorname{Ker}}
+\def\Id{\operatorname{Id}}
+\DeclareMathOperator{\Z}{\mathbbm{Z}}
+\newcommand\isomto{\stackrel{\sim}{\smash{\longrightarrow}\rule{0pt}{0.4ex}}}
+\def\Nat{\operatorname{Nat}}
+\def\Hom{\operatorname{Hom}}
+\def\op{\operatorname{op}}
+
+\DeclareMathOperator{\Set}{\textbf{Set}}
+
+
+\begin{document}
+\input{title.tex}
+\input{intro.tex}
+\input{s01.tex}
+
+\input{biblio.tex} % bibliography
+
+\end{document}

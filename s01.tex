@@ -1,0 +1,247 @@
+\section{Background}
+%\cite[\S3, Theorem 2.5]{atiyah_vector}
+
+
+\subsection{Theorem environments. Labels and references}
+% theorem, definition, lemma are defined in commands.tex
+\begin{theorem}
+Let $M$ be an abelian group. Then
+$$\Ker(\Id:M\to M)=0.$$
+\end{theorem}
+
+\begin{definition}
+Let $R$ be a ring and let $\Mod R$ be the category of left $R$-modules.
+Define \dots
+\end{definition}
+
+
+\begin{theorem}
+\label{some label}
+Assume that \dots
+Then \dots
+\end{theorem}
+\begin{proof}
+See 
+\cite{witten_topological},
+\cite[Theorem 5]{atiyah_introduction},
+\cite[\S3.4]{serre_lie},
+\cite[Lemma 2.1]{serre_linear}
+-- \textbf{Citations}.
+\end{proof}
+
+\begin{lemma}
+We have
+\begin{equation}\label{eq1}
+1+1=2.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Eq. \eqref{eq1} follows from Theorem \ref{some label}.
+See also Eq. (\ref{multiplication}) from Section \ref{sec:formulas}.
+-- \textbf{References}.
+\end{proof}
+
+\begin{remark}
+Note that \dots
+\end{remark}
+
+\subsection{Lists}
+\begin{enumerate}
+\item 
+\item 
+\item
+\end{enumerate}
+
+\begin{itemize}
+\item 
+\item
+\end{itemize}
+
+\subsection{Fonts}
+% all abbreviations are defined in commands.tex
+Mathcal:
+$$\cA,\cB,\cC.$$
+Mathbb:
+$$\bA,\bB,\bC,\bN,\bQ,\bR.$$
+Greek letters:
+$$\al,\be,\ga$$
+
+\subsection{Math formulas}
+\label{sec:formulas}
+% abbreviations are defined in commands.tex
+Sets
+$$\bN=\sets{n\in\bZ}{n\ge 0}.$$
+Norms
+$$\nn{x}_1=\sum_{i=1}^n\n{x_i},\qquad x\in\bR^n.$$
+Large brackets
+$$2\cdot \rbr{\sum_{i=1}^{n}i}=n(n+1),\qquad
+\sum_{i=1}^ni=\binom{n+1}{2}.$$
+Equation with a number
+\begin{equation}\label{multiplication}
+2\cdot 2=4.
+\end{equation}
+Multiline equation
+\begin{multline*}
+\sum_{k=1}^n\frac 1{k(k+1)}
+=\sum_{k=1}^n\rbr{\frac 1k-\frac 1{k+1}}\\
+=\frac11-\frac12+\frac12-\frac13+\dots+\frac1n-\frac1{n+1}=1-\frac1{n+1}=\frac n{n+1}
+\end{multline*}
+
+\subsection{Cases}
+$$(-1)^n
+=\begin{cases}
+1&n\text{ is even,}\\
+-1&n\text{ is odd.}
+\end{cases}
+$$
+
+\subsection{Commutative diagrams}
+
+$$\begin{tikzcd}
+A\rar["\phi"]\dar\ar[rr,bend left,"\alpha"]
+&B\dar["y"']\rar["\psi"]&B'\ar[dl]\\
+C\rar["x"']&D\ar[out=0,in=-90,distance=1cm,"f"]
+\end{tikzcd}$$
+
+
+\subsection{Yondeda Lemma}
+Cohomology operations are operations between cohomology groups that commute with homomorphisms induced by continuous maps. Thus, they provide us with another means of distinguishing spaces.
+
+\begin{definition}
+	[\textit{Cohomology Operation}]
+	A \textit{cohomology operation} is a map $\Theta = \Theta_X : H^m(X; G) \to H^n(X; H)$ between cohomology groups, for any space $X$, and fixed $m$, $n$, $G$, $H$, satisfying  the naturality property that for any map $f: X \to Y$ between spaces, the following diagram commutes:
+	\[\begin{tikzcd}
+	{H^m(Y; G)} && {H^n(Y;H)} \\
+	\\
+	{H^m(X; G)} && {H^n(X; H)}
+	\arrow["{\theta_Y}", from=1-1, to=1-3]
+	\arrow["{f^*}", from=1-1, to=3-1]
+	\arrow["{\Theta_X}"', from=3-1, to=3-3]
+	\arrow["{f^*}", from=1-3, to=3-3]
+	\end{tikzcd}\]
+	
+\end{definition}
+
+\begin{theorem}\label{cohomology-op}
+	\cite[Proposition 4L.1]{Hatcher:478079}
+	Fix $m$, $n \in \Z$, $G$, $H$ groups. For a space $Z$, there is a bijection between the set of cohomology operations $\Theta : H^m(Z; G) \to H^n(Z; H)$ and $H^n(K(G, m); H)$ given by $\Theta \mapsto \Theta(\iota)$, where $\iota$ is a fundamental class in $H^m(K(G, m); G)$.
+\end{theorem}
+
+We will state and prove a more general result in category theory, the \textit{Yoneda Lemma}, and apply this result to prove Theorem \ref{cohomology-op}. We first introduce the more general concept of a natural transformation between contravariant functors.
+
+\begin{definition}
+	[\textit{Natural Transformation}] If $F$ and $G$ are contravariant functors between categories $C$ and $D$, a \textit{natural transformation} $\eta : F \to G$ is a transformation such that for all maps $g : X \to Y$ in $C$, the following diagram commutes: 
+	
+	\[\begin{tikzcd}
+	X && FY  && GY \\
+	\\
+	Y && FX && GX
+	\arrow["{\eta_Y}", from=1-3, to=1-5]
+	\arrow["Gg", to=3-5, from=1-5]
+	\arrow["{\eta_X}", from=3-3, to=3-5]
+	\arrow["Fg", to=3-3, from=1-3]
+	\arrow["g"', from=1-1, to=3-1]
+	\end{tikzcd}\]
+	
+\end{definition}
+
+\begin{proposition}\label{nat}
+	Let C be the category of CW complexes and morphisms homotopy classes of continuous maps. Then cohomology operations are natural transformations from $C$ to $C$.
+\end{proposition}
+
+\begin{proof}
+	Immediate from definitions.
+\end{proof}
+
+We give a contravariant argument of the Yoneda lemma, so as to apply it to cohomology operations directly. The covariant argument is analogous.
+
+\begin{theorem}
+	[\textit{Yoneda Lemma}]
+	Let $C$ be a category, and $X$ an object of $C$. Let $h^X : C^{\op} \to \Set$ be the contravariant functor $h^X = \Hom(-, X)$. Then for any contravariant set-valued functor $F : C^{\op} \to \Set$, we have a bijection between the natural transformations from $h^X$ to $F$ and $FX \in \Set$, that is,
+	\[ FX \simeq \Nat(h^X, F) \]
+\end{theorem}
+
+\begin{proof}
+	Consider a natural transformation $\eta : h^X \to F$. Then for any object $Y$ in $C$ and a map $g : Y \to X$, the following square commutes, where $(h^X g )(\beta) = \beta \circ g$ for $\beta \in h^X X$, and $\eta_X$, $\eta_Y$ are the components of $\eta$ at $X, Y$ respectively.
+	\[\begin{tikzcd}
+	Y && h^X X && FX \\
+	\\
+	X && h^X Y && FY
+	\arrow["{\eta_X}", from=1-3, to=1-5]
+	\arrow["{Fg}", to=3-5, from=1-5]
+	\arrow["{\eta_Y}", from=3-3, to=3-5]
+	\arrow["h^X g", to=3-3, from=1-3]
+	\arrow["g"', from=1-1, to=3-1]
+	\end{tikzcd}\]
+	Let $1_X \in h^X X$ be the identity map. Then $\eta_X (1_X) \in FX$ and 
+	\[ \eta_Y(h^X g)(1_X) = \eta_Y(g) = Fg(\eta_X(1_X)).\] 
+	Thus for every object $Y$, $\eta_Y$ is determined by $\eta_X(1_X)$. We define $\tau : \Nat(h^X, F) \to FX$ by $\tau(\eta) = \eta_X(1_X)$.
+	
+	Conversely, any $g : Y \to X$, gives rise to $Fg: FX \to FY$. Let $x \in FX$. We wish to define a natural transformation $\lambda(x) : h^X \to F$. We define components map $(\lambda(x))_Y : h^X Y \to FY$ given by
+	\[ (\lambda(x))_Y (g) = Fg(x).\]
+	Then $\lambda(x)$ is a natural transformation, that is given any $f : Z \to Y$, we claim we have the following commuting:
+	\[\begin{tikzcd}
+	Z && h^X Y && FY \\
+	\\
+	Y && h^X Z && FZ
+	\arrow["{(\lambda(x))_Y}", from=1-3, to=1-5]
+	\arrow["{Ff}", to=3-5, from=1-5]
+	\arrow["{(\lambda(x))_Z}", from=3-3, to=3-5]
+	\arrow["h^X f", to=3-3, from=1-3]
+	\arrow["f"', from=1-1, to=3-1]
+	\end{tikzcd}\]
+	Indeed, $g : Y \to X$, $g \in h^X Y$ has $Ff(Fg(x)) = F(g \circ f)(x) = F (h^X f)(g)(x)$. Therefore we can define $\lambda : FX \to \Nat(h^X, F)$, $x \mapsto \lambda(x)$.
+	
+	Finally, we need to show that $\tau$ and $\lambda$ are inverses. For $x \in FX$, we have $\tau(\lambda(x)) = (\lambda(x))_X(1_X) = F(1_X)(x) = 1_{FX}(x)$, so that $\tau\circ\lambda = 1_{FX}$. For $\eta \in \Nat(h^X, F)$, we have $\lambda(\tau(\eta)) = \lambda(\eta_X(1_X))$. Then for any object $Y$ and any $g: Y \to X$, $\lambda(\eta_X(1_X))_Y(g) = Fg(\eta_X(1_X)) = \eta_Y(g)$ by above. Thus $\lambda(\eta_X(1_X)) = \eta$, so that $\lambda\circ\tau = 1_{\Nat(h^X, F)}$.
+	
+\end{proof}
+
+\begin{corollary}\label{hom}
+	Let $C$ be a category, $X$, $Y$ objects in $C$. Then,
+	\[ \Hom(X, Y) \simeq \Nat \left( \Hom(-, X), \Hom(-, Y) \right) \]
+\end{corollary}
+
+\begin{proof}
+	Let $F = h^Y$, and apply Yoneda lemma.
+\end{proof}
+
+We are now in a position to prove Theorem \ref{cohomology-op}.
+
+\begin{proof}
+	[\textit{Proof of Theorem \ref{cohomology-op}}]
+	By CW-approximation, it suffices to prove the statememt for the case of $Z$ a CW-complex. Then we can identify $H^m(Z;G)$ with $[Z, K(G, m)]$ and likewise $H^n(Z; H)$ with $[Z, K(H; n)]$. 
+	
+	By Corollary \ref{hom}, 
+	\[\Hom(K(G, m), K(H, n)) \simeq \Nat\left(\Hom(Z, K(G, m)), \Hom(Z, K(H, n)\right)
+	\simeq \Nat(H^m(Z; G), H^n(Z; H)),\]
+	but the natural transformations between the cohomology groups are cohomology operations by Proposition \ref{nat}, and $\Hom(K(G, m), K(H, n))$ is $H^n(K(G, m) ; H)$.
+	
+	Let $K = K(G, m))$. The  map $\tau$ from the proof of the Yoneda lemma sends a cohomology operation $\Theta$ to $\Theta_K(1_K)$, where $1_K$ is the identity map on $K$. Then $\Theta_K(1_K) = \Theta(\iota)$ for $\iota \in H^m(K, G) = H^m(K(G, m); G)$ with $\iota$ a fundamental class since $1_K = 1^*\iota = \iota$.
+\end{proof}
+
+
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+% Consider the category of pointed CW-complexes, with morphisms that are homotopy equivalence classes of continuous maps between objects. Let $X$ be an object in our category. Brown's representability theorem states that any reduced cohomology theory $h^*(X)$ is of the form $h^n(X) = [X, E_n]$, where $[-,-]$ denotes the set of basepoint preserving maps up to homotopy equivalence, and $\{E_n\}_{n \in \Z}$ is a sequence of spaces that is a $\Omega$-spectrum.
+
+% \begin{definition}
+% A sequence $\{ E_n \}_{n \in \Z}$ of spaces is a \textit{$\Omega$-spectrum} if $\Sigma E_n \isomto E_{n+1}$ is a weak homotopy equivalence, or considering the adjoint, $E_n \isomto \Omega E_{n+1}$ is a weak homotopy equivalence.
+% \end{definition}
+
+% \begin{definition}
+% A \textit{reduced cohomolgy theory} for a space $X$ is
+% \end{definition}
+
+% \begin{theorem}
+% Let $X$ be a pointed CW-complex, and let $\{E_n\}$ be a $\Omega$-spectrum. Then $h^*(X)$ with $h^n(X) = [X, E_n]$ for all $n \in \Z$ defines a reduced cohomology theory.
+% \end{theorem}
+
+% \begin{proof}
+% yo
+% \end{proof}
+
+
+% \begin{theorem}
+% [\textit{Brown's Representability theorem}]
+% Let $X$ be a pointed CW-complex, and let $h^*(X)$ be a reduced cohomolgy theory on $X$. Then there exists a $\Omega$-spectrum of {\color{red} Eilenberg MacLane Spaces} $\{E_n\}_{n \in \Z}$ such that $h^n(X)  = [X, E_n]$ for all $n \in \Z$.
+% \end{theorem}
