@@ -53,7 +53,7 @@
 \usepackage{graphicx}
 
 % These packages may also be useful for pictures...
-% \usepackage{color}
+ \usepackage{color}
 % \usepackage{eepic}
 % \usepackage{epic}
 % \usepackage{grapic}
@@ -130,10 +130,10 @@
 % in your latex-build-stream (just like the bibliography, the glossary
 % has its own build-stage)
 % ======================================================================
-\usepackage{datatool}
-\usepackage[nonumberlist,section=paragraph]{glossaries}
-\makeglossaries
-\input{glossary.tex}
+%\usepackage{datatool}
+%\usepackage[nonumberlist,section=paragraph]{glossaries}
+%\makeglossaries
+%\input{glossary.tex}
 
 
 % ======================================================================
@@ -195,7 +195,7 @@
 % Author name and the author name in upper case
 % (FORMAT) Has to match university records, check if you have
 % (FORMAT) full middle name, or middle initital on record.
-\author{Joe Xavier Student III, Jr.}
+\author{Edwina Aylward}
 
 
 % Title of the thesis (all in upper case), use \\ for line breaks as
@@ -204,13 +204,10 @@
 % 
 % This is for the title page
 % 
-\title{A SOMEWHAT LONG-WINDED \\
-  EXAMPLE THESIS \\
-  TO HELP WITH \LaTeX\  AND INTENDED FOR THE\\
-  DEPARTMENT OF MATHEMATICS AND STATISTICS}
+\title{Steenrod Operations and the Steenrod Algebra}
 % Number of lines in the title, without setting this the title page
 % will not be formatted properly
-\setcounter{titlelines}{4}
+\setcounter{titlelines}{1}
 
 
 % Heading style title, the number of lines can be different here then
@@ -221,9 +218,7 @@
 % (FORMAT) Make sure that this title has the EXACT same words at the
 % (FORMAT) title-page-title
 % 
-\titleheading{A Somewhat Long-Winded
-  Example Thesis \\ to Help With \LaTeX\  and Intended For The \\
-  Department of Mathematics and Statistics}
+\titleheading{Steenrod Operations and the Steenrod Algebra}
 
 
 % (FORMAT) The "degree" is set on three lines; select one of the
@@ -240,7 +235,7 @@
 %\degreeTHREE{Mathematics}
 
 % Degree (with Concentration)
-\degreeONE{Master of Science in Applied Mathematics}
+\degreeONE{B.A Mathematics}
 \degreeTWO{with a Concentration in}
 \degreeTHREE{Dynamical Systems}
 
@@ -259,9 +254,9 @@
 
 
 % Dates
-\gradyear{2038}
+\gradyear{2022}
 % (Format) Term Year 
-\submitdate{Winter 2038}
+\submitdate{Summer 2022}
 
 
 % ======================================================================
@@ -272,20 +267,20 @@
 % (FORMAT) Do not include the institution ("SDSU") for local faculty
 % (FORMAT) members; however, for external members DO include the
 % (FORMAT) institution.
-\committeechair{Carl Friedrich Gauss}
-\committeechairdept{Department of Mathematics and Statistics}
+%\committeechair{Carl Friedrich Gauss}
+%\committeechairdept{Department of Mathematics and Statistics}
 
 % Second committee member
-\committeesecond{Bernard Bolzano}
-\committeeseconddept{Department of Mathematics and Statistics}
+%\committeesecond{Bernard Bolzano}
+%\committeeseconddept{Department of Mathematics and Statistics}
 
 % Third (usually different department) committee member
-\committeethird{Donald Knuth}
-\committeethirddept{Department of Computer Science}
+%\committeethird{Donald Knuth}
+%\committeethirddept{Department of Computer Science}
 
 % Fourth is optional
-\committeefourth{Some Other Person}
-\committeefourthdept{Department of Otherness}
+%\committeefourth{Some Other Person}
+%\committeefourthdept{Department of Otherness}
 
 
 % ======================================================================
@@ -299,15 +294,15 @@
 
 % Signature page
 % (FORMAT) Mandatory for SDSU thesis
-\makesignature
+%\makesignature
 
 % Copyright page
 % (FORMAT) Mandatory for SDSU thesis
-\begin{copyrightpage}
-  Copyright~\copyright~2038 \\
-  by \\
-  Joe Xavier Student III, Jr.
-\end{copyrightpage}
+%\begin{copyrightpage}
+%  Copyright~\copyright~2038 \\
+%  by \\
+%  Joe Xavier Student III, Jr.
+%\end{copyrightpage}
 
 
 % ======================================================================
@@ -317,11 +312,11 @@
 % have a dedication
 % 
 % (FORMAT) Optional page
-\begin{dedication}
-  \vspace{3in}
-  \centering
-  Dedicated to me, as no one else is deserving.
-\end{dedication}
+%\begin{dedication}
+%  \vspace{3in}
+%  \centering
+%  Dedicated to me, as no one else is deserving.
+%\end{dedication}
 
 
 % ======================================================================
@@ -330,12 +325,12 @@
 % don't have an epigraph
 % 
 % (FORMAT) Optional page
-\begin{epigraph}
-  We must know, we shall know.\\
-  \begin{flushright}
-    -- David Hilbert
-  \end{flushright}
-\end{epigraph}
+%\begin{epigraph}
+%  We must know, we shall know.\\
+%  \begin{flushright}
+%    -- David Hilbert
+%  \end{flushright}
+%\end{epigraph}
 
 
 % ======================================================================
@@ -357,14 +352,14 @@
 % If you don't want a list of tables page, delete or comment out this
 % line
 % (FORMAT) ONLY delete this page if you have *no* tables
-\listoftables
+%\listoftables
 
 
 % ======================================================================
 % If you don't want a list of figures page, delete or comment out this
 % line
 % (FORMAT) ONLY delete this page if you have *no* figures
-\listoffigures
+%\listoffigures
 
 
 % ======================================================================
@@ -372,25 +367,17 @@
 % (EXPERIMENTAL) --- Remove / Comment out if you don't need a glossary
 % Glossaries
 %\renewcommand*{\glsclearpage}{}
-\begin{glossarypage}
+%\begin{glossarypage}
 %  \centering
-  \glsaddall\printglossary[title=]
-\end{glossarypage}
+%  \glsaddall\printglossary[title=]
+%\end{glossarypage}
 
 
 % Your acknowledgments go here
 % Or just delete this if you don't have acknowledgments
 % (you should! - Suck up to your advisor and committee!!!)
 \begin{acknowledgments}
-  I would like to thank Dr.~Gauss for allowing me to work on this
-  thesis even though he has been dead for so many years.  I would also
-  like to thank Dr.~Bolzano for not having any comments on this thesis,
-  and I would like to thank Dr.~Knuth for being the only living person
-  on my thesis committee, and for writing the wonderful \TeX.
-
-  This thesis is partially protected against the evil forces of the
-  Montezuma Publishing thesis reviewers by the magic of the Department
-  of Mathematics and Statistics Master's Thesis \LaTeX{} Template.
+ {\color{red} TO DO}
 \end{acknowledgments}
 
 %

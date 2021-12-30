@@ -1,8 +1,5 @@
-\contentsline {schapter}{ABSTRACT}{vi}%
-\contentsline {schapter}{LIST OF TABLES}{ix}%
-\contentsline {schapter}{LIST OF FIGURES}{x}%
-\contentsline {schapter}{GLOSSARY}{xi}%
-\contentsline {schapter}{ACKNOWLEDGMENTS}{xii}%
+\contentsline {schapter}{ABSTRACT}{ii}%
+\contentsline {schapter}{ACKNOWLEDGMENTS}{v}%
 \pagebreak [3]
 \contentsline {chaphd}{CHAPTER}{1}%
 \nopagebreak 
@@ -42,6 +39,6 @@
 \pagebreak [3]
 \contentsline {chaphd}{APPENDICES}{26}%
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{26}%
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{29}%
+\contentsline {chapter}{\numberline {A}CW Complexes and CW approximation}{26}%
+\contentsline {chapter}{\numberline {B}Graded modules and algebras, Hopf algebras, more algebraic stuff}{29}%
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 

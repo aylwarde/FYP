@@ -749,34 +749,34 @@ don't use the twocolumn option}
   \rule{1.25in}{1pt}\vspace*{-\baselineskip}\vspace*{-1pt}\par%
 %%%%%%%%%
     \noindent%
-    \begin{minipage}[t][\@sdsuthesislen][c]{\textwidth}%
-      \dsp \noindent \centering%
-\if@issavepaper
-	A {\em DRAFT} of a {\@thesisname} \\
-\else
-        A {\@thesisname} \\
-\fi
-        Presented to the \\
-        Faculty of \\
-        San Diego State University
-      \par
-    \end{minipage} \par%
+%    \begin{minipage}[t][\@sdsuthesislen][c]{\textwidth}%
+%      \dsp \noindent \centering%
+%\if@issavepaper
+%	A {\em DRAFT} of a {\@thesisname} \\
+%\else
+ %       A {\@thesisname} \\
+%\fi
+%        Presented to the \\
+%        Faculty of \\
+%        San Diego State University
+%      \par
+%    \end{minipage} \par%
 %%%%%%%%%
-  \rule{1.25in}{1pt}\vspace*{-\baselineskip}\vspace*{-1pt}\par%
+ % \rule{1.25in}{1pt}\vspace*{-\baselineskip}\vspace*{-1pt}\par%
 %%%%%%%%%
-    \noindent%
-    \begin{minipage}[t][\@sdsudegreelen][c]{\textwidth}%
-      \dsp \noindent \centering%
-        In Partial Fulfillment \\
-        of the Requirements for the Degree \\
+%    \noindent%
+%    \begin{minipage}[t][\@sdsudegreelen][c]{\textwidth}%
+%      \dsp \noindent \centering%
+%        In Partial Fulfillment \\
+%        of the Requirements for the Degree \\
 %        {\@degree} \\
 %        {\@switchofto} \\
 %        {\@degreein}
-        {\@degreeONE} \\
-        {\@degreeTWO} \\
-        {\@degreeTHREE} \\
-      \par%
-    \end{minipage} \par%
+%        {\@degreeONE} \\
+%        {\@degreeTWO} \\
+%        {\@degreeTHREE} \\
+%      \par%
+%    \end{minipage} \par%
 %%%%%%%%%
   \rule{1.25in}{1pt}\par%
   %no baseline skip since next is just a vfill
@@ -786,7 +786,7 @@ don't use the twocolumn option}
   { \dsp
         by \\
         {\@author}\\
-        {\@submitdate}
+        {\@gradyear}
       \par
   }
   \vspace*{\@sdsubottomskip}
@@ -879,14 +879,14 @@ don't use the twocolumn option}
   \begingroup
     \centering
     {\large\bfseries ABSTRACT OF THE THESIS}
-    \par \vspace*{12pt}
-    {\@titleheading} \\
-    by \\
-    {\@author} \\
+%    \par \vspace*{12pt}
+%    {\@titleheading} \\
+%    by \\
+%    {\@author} \\
 %    {\@degree} {\@switchofto} {\@degreein} \\
-    {\@degreeONE} {\@degreeTWO} {\@degreeTHREE} \\
-    San Diego State University, {\@gradyear}
-    \par
+%    {\@degreeONE} {\@degreeTWO} {\@degreeTHREE} \\
+%    San Diego State University, {\@gradyear}
+%    \par
   \endgroup
   \vspace*{12pt}
 }{%
