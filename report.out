@@ -1,9 +1,12 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Background}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Theorem environments. Labels and references}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Lists}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Fonts}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Math formulas}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Cases}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.6}{Commutative diagrams}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.7}{Yondeda Lemma}{section.2}% 9
+\BOOKMARK [1][-]{section.1}{Background}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Theorem environments. Labels and references}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Lists}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Fonts}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Math formulas}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Cases}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{Commutative diagrams}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{Brown Representability Theorem}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.8}{Yondeda Lemma}{section.1}% 9
+\BOOKMARK [1][-]{section.2}{Steenrod Operations}{}% 10
+\BOOKMARK [2][-]{subsection.2.1}{Introduction, Applications, Examples}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.2}{Adem relations}{section.2}% 12

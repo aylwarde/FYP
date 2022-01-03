@@ -97,6 +97,7 @@ $$
 
 \subsection{Commutative diagrams}
 
+
 $$\begin{tikzcd}
 A\rar["\phi"]\dar\ar[rr,bend left,"\alpha"]
 &B\dar["y"']\rar["\psi"]&B'\ar[dl]\\
@@ -104,6 +105,30 @@ C\rar["x"']&D\ar[out=0,in=-90,distance=1cm,"f"]
 \end{tikzcd}$$
 
 
+\subsection{Brown Representability Theorem}
+ Consider the category of pointed CW-complexes, with morphisms that are homotopy equivalence classes of continuous maps between objects. Let $X$ be an object in our category. Brown's representability theorem states that any reduced cohomology theory $h^*(X)$ is of the form $h^n(X) = [X, E_n]$, where $[-,-]$ denotes the set of basepoint preserving maps up to homotopy equivalence, and $\{E_n\}_{n \in \Z}$ is a sequence of spaces that is a $\Omega$-spectrum.
+
+ \begin{definition}
+ A sequence $\{ E_n \}_{n \in \Z}$ of spaces is a \textit{$\Omega$-spectrum} if $\Sigma E_n \isomto E_{n+1}$ is a weak homotopy equivalence, or considering the adjoint, $E_n \isomto \Omega E_{n+1}$ is a weak homotopy equivalence.
+ \end{definition}
+
+ \begin{definition}
+ A \textit{reduced cohomolgy theory} for a space $X$ is
+ \end{definition}
+
+ \begin{theorem}
+ Let $X$ be a pointed CW-complex, and let $\{E_n\}$ be a $\Omega$-spectrum. Then $h^*(X)$ with $h^n(X) = [X, E_n]$ for all $n \in \Z$ defines a reduced cohomology theory.
+ \end{theorem}
+
+ \begin{proof}
+ yo
+ \end{proof}
+
+
+ \begin{theorem}
+ [\textit{Brown's Representability theorem}]
+ Let $X$ be a pointed CW-complex, and let $h^*(X)$ be a reduced cohomolgy theory on $X$. Then there exists a $\Omega$-spectrum of {\color{red} Eilenberg MacLane Spaces} $\{E_n\}_{n \in \Z}$ such that $h^n(X)  = [X, E_n]$ for all $n \in \Z$.
+ \end{theorem}
 \subsection{Yondeda Lemma}
 Cohomology operations are operations between cohomology groups that commute with homomorphisms induced by continuous maps. Thus, they provide us with another means of distinguishing spaces.
 
@@ -123,7 +148,7 @@ Cohomology operations are operations between cohomology groups that commute with
 \end{definition}
 
 \begin{theorem}\label{cohomology-op}
-	\cite[Proposition 4L.1]{Hatcher:478079}
+	\cite[Proposition 4L.1]{Hatcher}
 	Fix $m$, $n \in \Z$, $G$, $H$ groups. For a space $Z$, there is a bijection between the set of cohomology operations $\Theta : H^m(Z; G) \to H^n(Z; H)$ and $H^n(K(G, m); H)$ given by $\Theta \mapsto \Theta(\iota)$, where $\iota$ is a fundamental class in $H^m(K(G, m); G)$.
 \end{theorem}
 
@@ -220,28 +245,4 @@ We are now in a position to prove Theorem \ref{cohomology-op}.
 \end{proof}
 
 
-% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 
-% Consider the category of pointed CW-complexes, with morphisms that are homotopy equivalence classes of continuous maps between objects. Let $X$ be an object in our category. Brown's representability theorem states that any reduced cohomology theory $h^*(X)$ is of the form $h^n(X) = [X, E_n]$, where $[-,-]$ denotes the set of basepoint preserving maps up to homotopy equivalence, and $\{E_n\}_{n \in \Z}$ is a sequence of spaces that is a $\Omega$-spectrum.
-
-% \begin{definition}
-% A sequence $\{ E_n \}_{n \in \Z}$ of spaces is a \textit{$\Omega$-spectrum} if $\Sigma E_n \isomto E_{n+1}$ is a weak homotopy equivalence, or considering the adjoint, $E_n \isomto \Omega E_{n+1}$ is a weak homotopy equivalence.
-% \end{definition}
-
-% \begin{definition}
-% A \textit{reduced cohomolgy theory} for a space $X$ is
-% \end{definition}
-
-% \begin{theorem}
-% Let $X$ be a pointed CW-complex, and let $\{E_n\}$ be a $\Omega$-spectrum. Then $h^*(X)$ with $h^n(X) = [X, E_n]$ for all $n \in \Z$ defines a reduced cohomology theory.
-% \end{theorem}
-
-% \begin{proof}
-% yo
-% \end{proof}
-
-
-% \begin{theorem}
-% [\textit{Brown's Representability theorem}]
-% Let $X$ be a pointed CW-complex, and let $h^*(X)$ be a reduced cohomolgy theory on $X$. Then there exists a $\Omega$-spectrum of {\color{red} Eilenberg MacLane Spaces} $\{E_n\}_{n \in \Z}$ such that $h^n(X)  = [X, E_n]$ for all $n \in \Z$.
-% \end{theorem}
